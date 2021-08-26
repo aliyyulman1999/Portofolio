@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>Personal Portfolio | responsive Website Design</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="toggle" onclick="toggleMenu(); "></div>
+
+        <section class="banner" id="home">
+            <div class="imgSidebar">
+                <img src="images/bg.jpg">
+            </div>
+
+            <div class="contentBx">
+                <h5 class="logoText">My_Portfolio</h5>
+                <div>
+                    <h4><span>Hello</span>, I'm</h4>
+                    <h2>Aliyyulman Jihan</h2>
+                    <h4>I'm a FrontEnd Web Developer.</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae perspiciatis magnam, corporis, illo sed ab nisi est esse repellat eum alias eligendi molestias vitae itaque quaerat quidem explicabo dolorem? Ab!
+                    Recusandae doloribus, corrupti suscipit cum, id porro mollitia esse, qui at ipsum facere dicta omnis animi sed laudantium exercitationem aut nemo. Beatae commodi cupiditate enim veritatis itaque aut nisi animi?</p>
+                    <a href="#"class="btn">About Me</a>
+                </div>
+                <ul class="sci">
+                    <li><a href="#"><img src="images/facebook.png"></a></li>
+                    <li><a href="#"><img src="images/twitter.png"></a></li>
+                    <li><a href="#"><img src="images/instagram.png"></a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="title white">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="content">
+                <div class="textBx">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore quae natus aliquam neque provident pariatur minus omnis ut ea harum perspiciatis inventore modi maxime beatae autem, cum vel sit cumque?
+                        Doloribus eum qui vitae tenetur rerum dolor. Porro id atque voluptate neque ratione iste omnis necessitatibus cum eaque, facere cupiditate tenetur ipsum excepturi ad molestiae quaerat harum dolor quidem corporis.
+                    </p>
+                </div>
+                <div class="imgBx">
+                    <img src="images/bg1.jpg">
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <div class="title">
+                <h2>Our Services</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet laboriosam iure maiores ut odio eligendi voluptate praesentium necessitatibus a fugit. Beatae quod nisi veritatis vitae, facere tempore iure tenetur mollitia.</p>
+            </div>
+            <div class="content">
+                <div class="servicesBx">
+                    <img src="images/icon1.png">
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eveniet ad incidunt dolorem assumenda doloremque doloribus, obcaecati laboriosam.</p>
+                </div>
+                <div class="servicesBx">
+                    <img src="images/icon2.png">
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eveniet ad incidunt dolorem assumenda doloremque doloribus, obcaecati laboriosam.</p>
+                </div>
+                <div class="servicesBx">
+                    <img src="images/icon3.png">
+                    <h2>Android Apps</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eveniet ad incidunt dolorem assumenda doloremque doloribus, obcaecati laboriosam.</p>
+                </div>
+                <div class="servicesBx">
+                    <img src="images/icon4.png">
+                    <h2>Photography</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eveniet ad incidunt dolorem assumenda doloremque doloribus, obcaecati laboriosam.</p>
+                </div>
+                <div class="servicesBx">
+                    <img src="images/icon5.png">
+                    <h2>content Writing</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eveniet ad incidunt dolorem assumenda doloremque doloribus, obcaecati laboriosam.</p>
+                </div>
+                <div class="servicesBx">
+                    <img src="images/icon6.png">
+                    <h2>Video Editing</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eveniet ad incidunt dolorem assumenda doloremque doloribus, obcaecati laboriosam.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="sidebar">
+            <ul class="menu">
+                <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+                <li><a href="#about" onclick="toggleMenu();">About</a></li>
+                <li><a href="#services" onclick="toggleMenu();">Services</a></li>
+                <li><a href="#" onclick="toggleMenu();">Work</a></li>
+                <li><a href="#" onclick="toggleMenu();">Contact</a></li>
+            </ul>
+        </div>
+
+        <script>
+            function toggleMenu(){
+                const menuToggle = document.querySelector('.toggle');
+                const sidebar = document.querySelector('.sidebar');
+                menuToggle.classList.toggle('active');
+                sidebar.classList.toggle('active');
+            }
+        </script>
+    </body>
+</html>
